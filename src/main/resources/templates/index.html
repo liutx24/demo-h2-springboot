@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>添加用户</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>添加用户</h1>
+<br/><br/>
+
+<!--/*@thymesVar id="Girl" type=""*/-->
+<form th:action="@{/add}"  method="post">
+
+    <input type="text" class="form-control" name="name" />
+
+
+
+
+    <input type="text" class="form-control" name="age"  placeholder="age"/>
+
+
+
+    <input type="submit" value="确定" class="btn btn-info"/>
+    &nbsp; &nbsp; &nbsp;
+
+</form>
+
+</body>
+</html>

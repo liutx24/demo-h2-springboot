@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>添加用户</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>添加用户</h1>
+<br/><br/>
+
+<tbody>
+<!--/*@thymesVar id="girls" type=""*/-->
+<tr th:each="girl:${girls}">
+    <!--/*@thymesVar id="id" type=""*/-->
+    <td th:text="${girl.id}">1</td>
+    <!--/*@thymesVar id="name" type=""*/-->
+    <td th:text="${girl.name}">1</td>
+    <!--/*@thymesVar id="age" type=""*/-->
+    <td th:text="${girl.age}">1</td>
+    
+</tr>
+</tbody>
+
+</body>
+</html>
